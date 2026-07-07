@@ -25,5 +25,14 @@ def max(arr):
 	else:
 		rest_max = max(arr[1:])
 		return arr[0] if arr[0] > rest_max else rest_max
-	
+
+"""
+ИЛИ... (вариант из книги)
+def max(arr):
+	if len(arr) == 2:
+		return arr[0] if arr[0] > arr[1] else arr[1]
+	else:
+		rest_max = max(arr[1:])
+		return arr[0] if arr[0] > rest_max else rest_max
+"""
 # print(max([1, 2, 3, -1, 0, 1]))
